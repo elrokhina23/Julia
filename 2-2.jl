@@ -5,8 +5,8 @@
 
 
 function do_upora(r::Robot, side::HorizonSide)
+    k = 0
     while isborder(r, side)==false
-        k = 0
         move!(r, side )
         k+=1
     end
