@@ -13,6 +13,7 @@ function change_side(side)
     end
 end
 
+#Меняет робота против часовой стрелки
 function rev(side)
     if side == Nord
         return Sud
@@ -28,6 +29,7 @@ function rev(side)
     end
 end
 
+#Меняет робота на противоположную
 function obhod(r,side)
     path = []
     count = 0
