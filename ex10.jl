@@ -15,9 +15,10 @@ function main10!(::Robot)
     while length(a) > 0 
       summa += pop!(a)
     end
+    println(summa/k)
   end
   
-  function moves!(::Robot, side, a)
+  function moves!(r::Robot, side, a)
     while !isborder(r, side)
       if ismarker(r)
         push!(a, temperature(r))
